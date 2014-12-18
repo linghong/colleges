@@ -5,7 +5,11 @@ img {
 }
 
 main{
-	margin-top:40px;
+	margin-top:20px;
+}
+
+#search form{
+	padding:10px;
 }
  /*----------------------------------------------------------------------
  Make several column system
