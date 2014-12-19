@@ -9,71 +9,72 @@ main{
 }
 
 #search form{
-	padding:10px;
+	padding:15px;
+	background-color:#f2e5bd;
+	border:3px solid #726c59;
 }
+#search form .middle{
+	margin-left:30%;
+}
+#search h1{
+	font-size: 26px;
+	text-align:center;
+	font-weight:bold;
+}
+
  /*----------------------------------------------------------------------
  Make several column system
  I would rather to use 1% padding in each sight of the column, so it has 1% padding in the left of first column and 1% padding in the right of the last column
  -------------------------------------------------------------------*/
 /*Two columns system, left as sidebar*/
-#col-header .ui-grid-a .ui-block-a{
+#home-col-1-4 .ui-grid-a .ui-block-a,
+#schools .ui-grid-a .ui-block-a,
+#smith-college .ui-grid-a .ui-block-a,
+#UMass .ui-grid-a .ui-block-a,
+#Mount-Holyoke .ui-grid-a .ui-block-a,
+#Hampshire-college .ui-grid-a .ui-block-a,
+#search .ui-grid-a .ui-block-a{
 	width:19%;
 }
-#col-header .ui-grid-a .ui-block-b{
+#home-col-1-4 .ui-grid-a .ui-block-b,
+#schools .ui-grid-a .ui-block-b,
+#smith-college .ui-grid-a .ui-block-b,
+#UMass .ui-grid-a .ui-block-b,
+#Mount-Holyoke .ui-grid-a .ui-block-b,
+#Hampshire-college .ui-grid-a .ui-block-b,
+#search .ui-grid-a .ui-block-b{
 	width:81%;
 }
 
 /*Two columns system, right as sidebar*/
-#col-2-1 .ui-grid-a .ui-block-a{
+#home-col-2-1 .ui-grid-a .ui-block-a{
 	width:66%;
 	padding-right:1%;
 	margin-top:20px;
 }
-#col-2-1 .ui-grid-a .ui-block-b{
+#home-col-2-1 .ui-grid-a .ui-block-b{
 	width:33%;
 	margin-top:20px;
 }
 
-/*Two columns system, left as sidebar*/
-#col-1-2 .ui-grid-a .ui-block-a{
-	width:33%;
-	padding-right:1%;
-	margin-top:20px;
-}
-#col-1-2 .ui-grid-a .ui-block-b{
-	width:66%;
-	margin-top:20px;
-}
-
-/*Two columns system, equally divided*/
-#col-1-1 .ui-grid-a .ui-block-a{
-	width:48%;
-	padding-left:1%;
-	padding-right:1%;
-}
-#col-1-1 .ui-grid-a .ui-block-b{
-	width:48%;
-	padding-left:1%;
-	padding-right:1%;
-}
 
 /*Four columns system, equally divided*/
-#col-1-1-1-1 .ui-grid-c .ui-block-a{
+.ui-grid-c .ui-block-a{
 	width:23%;
 	padding-right:1%;
 	padding-left:1%;
 }
-#col-1-1-1-1 .ui-grid-c .ui-block-b{
+ .ui-grid-c .ui-block-b{
 	width:23%;
 	padding-right:1%;
 	padding-left:1%;
 }
-#col-1-1-1-1 .ui-grid-c .ui-block-c{
+.ui-grid-c .ui-block-c{
 	width:23%;
 	padding-right:1%;
 	padding-left:1%;
 }
-#col-1-1-1-1 .ui-grid-c .ui-block-d{
+.ui-grid-c .ui-block-d{
 	width:23%;
 	padding-right:1%;
 	padding-left:1%;
@@ -92,6 +93,32 @@ main{
 	-webkit-border-bottom-right-radius:inherit;
 	border-bottom-right-radius:inherit;
 }
+figure{
+	border:5px solid #726c59;
+	background-color:#f2e5bd;
+	padding:10px;
+	margin:10px;
+}
+#five-college {
+	width: 300px;
+	height: 180px;
+	background-repeat: no-repeat;
+}
+.amherst-college {
+	background-image: url(../images/Amherst-college-gym-s.jpg);
+}
+.smith-college {
+	background-image: url(../images/Smith-College-Smith-Campus-Center-s.jpg);
+}
+.umass-amherst {
+	background-image: url(../images/UMass-Bluewall-Dininghall-s.jpg);
+}
+.mount-holyoke-college {
+	background-image: url(../images/Mount-Holyoke-amplitheater-s.jpg);
+}
+.hampshire-college {
+	background-image: url(../images/Hampshire-Beautiful-campus-s.jpg);
+}
 
 
 /*---------------------------------------------------------
@@ -100,26 +127,34 @@ Several Breakpoints
 /*Breakpoint 720px*/
 @media all and (max-width: 720px){
 	/*for four columns*/
-	#col-1-1-1-1 .ui-grid-c .ui-block-a,
-	#col-1-1-1-1 .ui-grid-c .ui-block-b,
-	#col-1-1-1-1 .ui-grid-c .ui-block-c,
-	#col-1-1-1-1 .ui-grid-c .ui-block-d{
+#schools .ui-grid-c .ui-block-a,
+#schools .ui-grid-c .ui-block-b,
+#schools .ui-grid-c .ui-block-c,
+#schools .ui-grid-c .ui-block-d,
+#smith-college .ui-grid-c .ui-block-a,
+#smith-college .ui-grid-c .ui-block-b,
+#smith-college .ui-grid-c .ui-block-c,
+#smith-college .ui-grid-c .ui-block-d,
+#UMass .ui-grid-c .ui-block-a,
+#UMass .ui-grid-c .ui-block-b,
+#UMass .ui-grid-c .ui-block-c,
+#UMass .ui-grid-c .ui-block-d,
+#Mount-Holyoke .ui-grid-c .ui-block-a,
+#Mount-Holyoke .ui-grid-c .ui-block-b,
+#Mount-Holyoke .ui-grid-c .ui-block-c,
+#Mount-Holyoke .ui-grid-c .ui-block-d,
+#Hampshire-college .ui-grid-c .ui-block-a,
+#Hampshire-college .ui-grid-c .ui-block-b,
+#Hampshire-college .ui-grid-c .ui-block-c,
+#Hampshire-college .ui-grid-c .ui-block-d{
 		width:48%;
 		padding-right:1%;
 		padding-right:1%;
 	}
 
-	/*for Two columns left side bar or right side bar*/
-	#col-1-2 .ui-grid-a .ui-block-a,
-	#col-1-2 .ui-grid-a .ui-block-b{
-	width:48%;
-	padding-left:1%;
-	padding-right:1%;
-	}
-
 	/*for Two columns right side bar or right side bar*/
-	#col-2-1 .ui-grid-a .ui-block-a,
-	#col-2-1 .ui-grid-a .ui-block-b{
+	#home-col-2-1 .ui-grid-a .ui-block-a,
+	#home-col-2-1 .ui-grid-a .ui-block-b{
 	width: 48%;
 	padding-left:1%;
 	padding-right:1%;
@@ -129,18 +164,34 @@ Several Breakpoints
 /*Breakpoint 480px*/
 @media all and (max-width: 480px){
 	/*for four columns*/
-	#col-1-1-1-1 .ui-grid-c .ui-block-a,
-	#col-1-1-1-1 .ui-grid-c .ui-block-b,
-	#col-1-1-1-1 .ui-grid-c .ui-block-c,
-	#col-1-1-1-1 .ui-grid-c .ui-block-d{
+	#schools .ui-grid-c .ui-block-a,
+#schools .ui-grid-c .ui-block-b,
+#schools .ui-grid-c .ui-block-c,
+#schools .ui-grid-c .ui-block-d,
+#smith-college .ui-grid-c .ui-block-a,
+#smith-college .ui-grid-c .ui-block-b,
+#smith-college .ui-grid-c .ui-block-c,
+#smith-college .ui-grid-c .ui-block-d,
+#UMass .ui-grid-c .ui-block-a,
+#UMass .ui-grid-c .ui-block-b,
+#UMass .ui-grid-c .ui-block-c,
+#UMass .ui-grid-c .ui-block-d,
+#Mount-Holyoke .ui-grid-c .ui-block-a,
+#Mount-Holyoke .ui-grid-c .ui-block-b,
+#Mount-Holyoke .ui-grid-c .ui-block-c,
+#Mount-Holyoke .ui-grid-c .ui-block-d,
+#Hampshire-college .ui-grid-c .ui-block-a,
+#Hampshire-college .ui-grid-c .ui-block-b,
+#Hampshire-college .ui-grid-c .ui-block-c,
+#Hampshire-college .ui-grid-c .ui-block-d{
 		width:98%;
 		padding-left:1%;
 		padding-right:1%;
 	}
 
 	/*for Two columns left side bar or right side bar or equally divided columns*/
-	#col-2-1 .ui-grid-a .ui-block-a,
-	#col-2-1 .ui-grid-a .ui-block-b{
+	#home-col-2-1 .ui-grid-a .ui-block-a,
+	#home-col-2-1 .ui-grid-a .ui-block-b{
 		width:98%;
 		padding-left:1%;
 		padding-right:1%;

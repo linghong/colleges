@@ -9,12 +9,17 @@
 <link rel="stylesheet" href="themes/Schools.min.css" />
 <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
 <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<link rel="prefetch" href="images/Amherst-college-gym-s.jpg">
+<link rel="prefetch" href="images/Smith-College-Smith-Campus-Center-s.jpg">
+<link rel="prefetch" href="images/UMass-Bluewall-Dininghall-s.jpg">
+<link rel="prefetch" href="images/Mount-Holyoke-amplitheater-s.jpg">
+<link rel="prefetch" href="images/Hampshire-Beautiful-campus-s.jpg">
 
 </head>
 <body >
 <section data-role="page" id="home" data-theme="b">
 	<header data-role="header"  data-position="fixed" >
-		<div id="col-header">
+		<div id="home-col-1-4">
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<img src="images/logoa.png" alt="logo">
@@ -27,32 +32,34 @@
 		<nav data-role="navbar">
 			<ul>
 				<li> <a href="#home" class="ui-btn-active" >Home</a></li>
-				<li> <a href="#schools" >Schools</a></li>
-				<li> <a href="#search" >Search Schools</a></li>
+				<li> <a href="#schools" >Colleges</a></li>
+				<li> <a href="#search" >Search Colleges</a></li>
 			</ul>
 		</nav>
 	</header >
-	<main role="main" class="ui-content" id="col-3-1">
+	<div role="main" class="ui-content">
 		<div class="ui-corner-all custom-corners"> 
 			<div class="ui-bar ui-bar-a">
 				<h2>Visit of Five Colleges</h2>
 			</div>
-			<div id="col-2-1">
+			<div id="home-col-2-1">
 				<div  class="ui-grid-a ui-body ui-body-a">
 					<div class="ui-block-a">
-						<img src="images/UMass-meeting.jpg">
+						<img src="images/UMass-meeting-m.jpg" alt="UMass meeting">
 					</div>
 					<div class="ui-block-b">
-						On October 2012, I visited five colleges located in Amherst area. They are Amherst College, Hampshire College, Mount Holyoke College, Smith College, UMass Amherst. They worked like a same unit, students can take courses in any campus, buses are also running between each colleges.
-
-						Select of  the pictures for the college visit:
+						<p>On October 2012, I visited five colleges located in Amherst area. They are Amherst College, Hampshire College, Mount Holyoke College, Smith College, UMass Amherst. They worked like a same unit, students can take courses in any campus, buses are also running between each colleges.</p>
+ 						<p>Swipe left/right to see Amherest college/ Smith college's pictures.</p>
+                  		<p>Tap and hold to see UMas Amherest's campus image.</p>
+                  		<p>Try an orientation change to see other two Five College schools' pictures.</p>
+						<div id="five-college" class="start"></div>
 					</div>
 				</div>
 			</div>
 		</div>
 		
-		<p><a href="#schools"class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read more Information about this college visit &gt;&gt;</a></p>
-	</main>
+		<p><a href="#schools" class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read more Information about this college visit &gt;&gt;</a></p>
+	</div>
 	<footer data-role="footer" style="overflow:hidden;">
 		<div data-role="navbar">
 			<ul>
@@ -65,7 +72,6 @@
 </section>
 <section data-role="page" id="schools" data-theme="b" data-position="fixed">
 	<header data-role="header" >
-		<div id="col-header">
 			<div class="ui-grid-a" >
 				<div class="ui-block-a">
 					<img src="images/logoa.png" alt="logo">
@@ -74,35 +80,38 @@
 					<img src="images/header7b.jpg" alt="header image">
 				</div>
 			</div>
-		</div>
 		<nav data-role="navbar">
 			<ul>
 				<li> <a href="#home" >Home</a></li>
-				<li> <a href="#schools" class="ui-btn-active" >Schools</a></li>
-				<li> <a href="#search">Search Schools</a></li>
+				<li> <a href="#schools" class="ui-btn-active" >Colleges</a></li>
+				<li> <a href="#search">Search Colleges</a></li>
 			</ul>
 		</nav>
 	</header >
-	<main data-role="main" class="ui-content" id="col-1-1-1-1">
+	<div data-role="main" class="ui-content">
 		<div class="ui-bar ui-bar-a">
 				<h2>Amherest Colleges</h2>
 			</div>
 		<div class="ui-grid-c ui-body ui-body-a">
-			<div class="ui-block-a">
-				<img src="images/Amherst-college-tour-guide.jpg" alt="Amherst college">
-			</div>
-			<div class="ui-block-b">
-				<img src="images/Amherst-college-library.jpg" alt="Amherst college">
-			</div>
-			<div class="ui-block-c">
-				<img src="images/Amherst-college-gyms.jpg" alt="Amherst college">
-			</div>
-			<div class="ui-block-d">
-				<img src="images/Amherst-college-dorm.jpg" alt="Amherst college">
-			</div>
+			<figure class="ui-block-a">
+				<img src="images/Amherst-college-tour-guide-m.jpg" alt="Amherst college">
+				<figcaption>Fig1.College tour guide is talking </figcaption>
+			</figure>
+			<figure class="ui-block-b">
+				<img src="images/Amherst-college-library-m.jpg" alt="Amherst college">
+				<figcaption>Fig2. Amherst College Library</figcaption>
+			</figure>
+			<figure class="ui-block-c">
+				<img src="images/Amherst-college-gym-m.jpg" alt="Amherst college">
+				<figcaption>Fig3. Amherst College Gym</figcaption>
+			</figure>
+			<figure class="ui-block-d">
+				<img src="images/Amherst-college-dorm-m.jpg" alt="Amherst college">
+				<figcaption>Fig4. Amherst College Dorm Building</figcaption>
+			</figure>
 		</div>
-	</main>
-	<aside><a href="#smith-college"class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read next college:Smith College information &gt;&gt;</a>
+	</div>
+	<aside><a href="#smith-college" class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read next college:Smith College information &gt;&gt;</a>
 	</aside>
 	<footer data-role="footer" style="overflow:hidden;">
 		<div data-role="navbar">
@@ -116,45 +125,46 @@
 </section>
 <section data-role="page" id="smith-college" data-theme="b" data-position="fixed">
 	<header data-role="header" >
-		<div id="col-header">
-			<div class="ui-grid-a" >
-				<div class="ui-block-a">
-					<img src="images/logoa.png" alt="logo">
-				</div>
-				<div class="ui-block-b">
+		<div class="ui-grid-a" >
+			<div class="ui-block-a">
+				<img src="images/logoa.png" alt="logo">
+			</div>
+			<div class="ui-block-b">
 					<img src="images/header7b.jpg" alt="header image">
-				</div>
 			</div>
 		</div>
 		<nav data-role="navbar">
 			<ul>
 				<li> <a href="#home" >Home</a></li>
-				<li> <a href="#schools" class="ui-btn-active" >Schools</a></li>
-				<li> <a href="#search">Search Schools</a></li>
+				<li> <a href="#schools" class="ui-btn-active" >Colleges</a></li>
+				<li> <a href="#search">Search Colleges</a></li>
 			</ul>
 		</nav>
 	</header >
-	<main data-role="main" class="ui-content" id="col-1-1-1-1">
-		
+	<div data-role="main" class="ui-content">		
 		<div class="ui-bar ui-bar-a">
 			<h1>Smith College</h1>
 		</div>
-		<div class="ui-grid-c ui-body ui-body-a">
-			<div class="ui-block-a">
-				<img src="images/Smith-college-discover-library.jpg" alt="Smith college">
-			</div>
-			<div class="ui-block-b">
-				<img src="images/Smith-college-dorm-living-area.jpg" alt="Smith college">
-			</div>
-			<div class="ui-block-c">
-				<img src="images/Smith-College-gym.jpg" alt="Smith college">
-			</div>
-			<div class="ui-block-d">
-				<img src="images/Smith-College-Smith-Campus-Center.jpg" alt="Smith college">
-			</div>
+		<div class="ui-grid-c ui-body ui-body-a" >
+			<figure class="ui-block-a">
+				<img src="images/Smith-college-discover-library-m.jpg" alt="Smith college">
+				<figcaption>Fig1. Smith college discover library </figcaption>
+			</figure>
+			<figure class="ui-block-b">
+				<img src="images/Smith-college-dorm-living-area-m.jpg" alt="Smith college">
+				<figcaption>Fig2. Smith college dorm living area </figcaption>
+			</figure>
+			<figure class="ui-block-c">
+				<img src="images/Smith-College-gym-m.jpg" alt="Smith college">
+				<figcaption>Fig3. Smith college gym </figcaption>
+			</figure>
+			<figure class="ui-block-d">
+				<img src="images/Smith-College-Smith-Campus-Center-m.jpg" alt="Smith college">
+				<figcaption>Fig4. Smith college campus center </figcaption>
+			</figure>   
 		</div>
-	</main>
-	<aside><a href="#UMass"class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read next college:UMass Amherest information &gt;&gt;</a>
+	</div>
+	<aside><a href="#UMass" class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read next college:UMass Amherest information &gt;&gt;</a>
 	</aside>
 	<footer data-role="footer" style="overflow:hidden;">
 		<div data-role="navbar">
@@ -169,45 +179,46 @@
 
 <section data-role="page" id="UMass" data-theme="b" data-position="fixed">
 	<header data-role="header" >
-		<div id="col-header">
-			<div class="ui-grid-a" >
-				<div class="ui-block-a">
-					<img src="images/logoa.png" alt="logo">
-				</div>
-				<div class="ui-block-b">
-					<img src="images/header7b.jpg" alt="header image">
-				</div>
+		<div class="ui-grid-a" >
+			<div class="ui-block-a">
+				<img src="images/logoa.png" alt="logo">
+			</div>
+			<div class="ui-block-b">
+				<img src="images/header7b.jpg" alt="header image">
 			</div>
 		</div>
 		<nav data-role="navbar">
 			<ul>
 				<li> <a href="#home" >Home</a></li>
-				<li> <a href="#schools" class="ui-btn-active" >Schools</a></li>
-				<li> <a href="#search" >Search Schools</a></li>
+				<li> <a href="#schools" class="ui-btn-active" >Colleges</a></li>
+				<li> <a href="#search" >Search Colleges</a></li>
 			</ul>
 		</nav>
 	</header >
-	<main data-role="main" class="ui-content" id="col-1-1-1-1">
-		
+	<div data-role="main" class="ui-content">		
 		<div class="ui-bar ui-bar-a">
 			<h1>UMass Amherst</h1>
 		</div>
 		<div class="ui-grid-c ui-body-uibody-a">
-			<div class="ui-block-a">
-				<img src="images/UMass-Bluewall-Dininghall.jpg" alt="UMass Amherest">
-			</div>
-			<div class="ui-block-b">
-				<img src="images/UMass-Life-Science-Building.jpg" alt="UMass Amherest">
-			</div>
-			<div class="ui-block-c">
-				<img src="images/UMass-tour-guide.jpg" alt="UMass Amherest">
-			</div>
-			<div class="ui-block-d">
-				<img src="images/UMass-Science-Building.jpg" alt="UMass Amherest">
-			</div>
+			<figure class="ui-block-a">
+				<img src="images/UMass-Bluewall-Dininghall-m.jpg" alt="UMass Amherest">
+				<figcaption>Fig1. UMass Bluewall Dining Hall </figcaption>
+			</figure>
+			<figure class="ui-block-b">
+				<img src="images/UMass-Life-Science-Building-m.jpg" alt="UMass Amherest">
+				<figcaption>Fig2. UMass Life Science Building </figcaption>
+			</figure>
+			<figure class="ui-block-c">
+				<img src="images/UMass-tour-guide-m.jpg" alt="UMass Amherest">
+				<figcaption>Fig3. UMass tour guide is talking.</figcaption>
+			</figure>
+			<figure class="ui-block-d">
+				<img src="images/UMass-Science-Building-m.jpg" alt="UMass Amherest">
+				<figcaption>Fig4. UMass Science Building</figcaption>
+			</figure>			
 		</div>
-	</main>
-	<aside><a href="#Hampshire-college"class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read next college:Hampshire College information &gt;&gt;</a>
+	</div>
+	<aside><a href="#Hampshire-college" class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read next college:Hampshire College information &gt;&gt;</a>
 	</aside>
 	<footer data-role="footer" style="overflow:hidden;">
 		<div data-role="navbar">
@@ -221,44 +232,46 @@
 </section>	
 <section data-role="page" id="Hampshire-college" data-theme="b" data-position="fixed">
 	<header data-role="header" >
-		<div id="col-header">
-			<div class="ui-grid-a" >
-				<div class="ui-block-a">
-					<img src="images/logoa.png" alt="logo">
-				</div>
-				<div class="ui-block-b">
-					<img src="images/header7b.jpg" alt="header image">
-				</div>
+		<div class="ui-grid-a" >
+			<div class="ui-block-a">
+				<img src="images/logoa.png" alt="logo">
+			</div>
+			<div class="ui-block-b">
+				<img src="images/header7b.jpg" alt="header image">
 			</div>
 		</div>
 		<nav data-role="navbar">
 			<ul>
 				<li> <a href="#home" >Home</a></li>
-				<li> <a href="#schools" class="ui-btn-active" >Schools</a></li>
-				<li> <a href="#search">Search Schools</a></li>
+				<li> <a href="#schools" class="ui-btn-active" >Colleges</a></li>
+				<li> <a href="#search">Search Colleges</a></li>
 			</ul>
 		</nav>
 	</header >
-	<main data-role="main" class="ui-content" id="col-1-1-1-1">
+	<div data-role="main" class="ui-content">
 		<div class="ui-bar ui-bar-a">
 			<h1>Hampshire College</h1>
 		</div>		
 		<div class="ui-grid-c ui-body ui-body-a">
-			<div class="ui-block-a">
-				<img src="images/Hampshire-Adele-Simmons-Hall.jpg" alt="Hampshire College">
-			</div>
-			<div class="ui-block-b">
-				<img src="images/Hampshire-Beautiful-campus.jpg" alt="Hampshire College">
-			</div>
-			<div class="ui-block-c">
-				<img src="images/Hampshire-Dorm.jpg" alt="Hampshire College">
-			</div>
-			<div class="ui-block-d">
-				<img src="images/Hampshire-gym.jpg" alt="Hampshire College">
-			</div>
+			<figure class="ui-block-a">
+				<img src="images/Hampshire-Adele-Simmons-Hall-m.jpg" alt="Hampshire College">
+				<figcaption>Fig1. Hampshire Adele Simmons Hall </figcaption>
+			</figure>
+			<figure class="ui-block-b">
+				<img src="images/Hampshire-Beautiful-campus-m.jpg" alt="Hampshire College">
+				<figcaption>Fig2. Hampshire Beautiful Campus </figcaption>
+			</figure>
+			<figure class="ui-block-c">
+				<img src="images/Hampshire-Dorm-m.jpg" alt="Hampshire College">
+				<figcaption>Fig3. Hampshire College Dorm </figcaption>
+			</figure>
+			<figure class="ui-block-d">
+				<img src="images/Hampshire-gym-m.jpg" alt="Hampshire College">
+				<figcaption>Fig4. Hampshire College Gym </figcaption>
+			</figure>			
 		</div>
-	</main>
-	<aside><a href="#Mount-Holyoke"class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read next college:Mount-Holyoke College information &gt;&gt;</a>
+	</div>
+	<aside><a href="#Mount-Holyoke" class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read next college:Mount-Holyoke College information &gt;&gt;</a>
 	</aside>
 	<footer data-role="footer" style="overflow:hidden;">
 		<div data-role="navbar">
@@ -273,45 +286,46 @@
 	
 <section data-role="page" id="Mount-Holyoke" data-theme="b" data-position="fixed">
 	<header data-role="header" >
-		<div id="col-header">
-			<div class="ui-grid-a" >
-				<div class="ui-block-a">
-					<img src="images/logoa.png" alt="logo">
-				</div>
-				<div class="ui-block-b">
-					<img src="images/header7b.jpg" alt="header image">
-				</div>
+		<div class="ui-grid-a" >
+			<div class="ui-block-a">
+				<img src="images/logoa.png" alt="logo">
+			</div>
+			<div class="ui-block-b">
+				<img src="images/header7b.jpg" alt="header image">
 			</div>
 		</div>
 		<nav data-role="navbar">
 			<ul>
 				<li> <a href="#home" >Home</a></li>
-				<li> <a href="#schools" class="ui-btn-active" >Schools</a></li>
-				<li> <a href="#search" >Search Schools</a></li>
+				<li> <a href="#schools" class="ui-btn-active" >Colleges</a></li>
+				<li> <a href="#search" >Search Colleges</a></li>
 			</ul>
 		</nav>
 	</header >
-	<main data-role="main" class="ui-content" id="col-1-1-1-1">	
-
+	<div data-role="main" class="ui-content">	
 		<div class="ui-bar ui-bar-a">
 			<h1>Mount-Holyoke College</h1>	
 		</div>	
 		<div class="ui-grid-c">
-			<div class="ui-block-a">
-				<img src="images/Mount-Holyoke-amplitheater.jpg" alt="Mount-Holyoke College">
-			</div>
-			<div class="ui-block-b">
-				<img src="images/Mount-Holyoke-Inside-Shattack-Hall.jpg" alt="Mount-Holyoke College">
-			</div>
-			<div class="ui-block-c">
-				<img src="images/Mount-Holyoke-Kendade-Hall.jpg" alt="Mount-Holyoke College">
-			</div>
-			<div class="ui-block-d">
-				<img src="images/Mount-Holyoke-Talcott-Green-house.jpg" alt="Mount-Holyoke College">
-			</div>
+			<figure class="ui-block-a">
+				<img src="images/Mount-Holyoke-amplitheater-m.jpg" alt="Mount-Holyoke College">
+				<figcaption>Fig1. Mount Holyoke Amplitheater </figcaption>
+			</figure>		
+			<figure class="ui-block-b">
+				<img src="images/Mount-Holyoke-Inside-Shattack-Hall-m.jpg" alt="Mount-Holyoke College">
+				<figcaption>Fig2. Inside Shattack Hall </figcaption>
+			</figure>	
+			<figure class="ui-block-c">
+				<img src="images/Mount-Holyoke-Kendade-Hall-m.jpg" alt="Mount-Holyoke College">
+				<figcaption>Fig3. Kendade Hall </figcaption>
+			</figure>
+			<figure class="ui-block-d">
+				<img src="images/Mount-Holyoke-Talcott-Green-house-m.jpg" alt="Mount-Holyoke College">
+				<figcaption>Fig4. Talcott Green House</figcaption>
+			</figure>
 		</div>
-	</main>
-	<aside><a href="#schools"class="ui-btn ui-icon-carat-d ui-btn-icon-right">Back to:Amherest College information &gt;&gt;</a>
+	</div>
+	<aside><a href="#schools" class="ui-btn ui-icon-carat-d ui-btn-icon-right">Back to:Amherest College information &gt;&gt;</a>
 	</aside>
 	<footer data-role="footer" style="overflow:hidden;">
 		<div data-role="navbar">
@@ -325,7 +339,7 @@
 </section>
 <section data-role="page" id="search" data-theme="b">
 	<header data-role="header"  data-position="fixed" >
-		<div id="col-header">
+		<div class="col-1-4">
 			<div class="ui-grid-a">
 				<div class="ui-block-a">
 					<img src="images/logoa.png" alt="logo">
@@ -338,21 +352,22 @@
 		<nav data-role="navbar">
 			<ul>
 				<li> <a href="#home" >Home</a></li>
-				<li> <a href="#schools" >Schools</a></li>
-				<li> <a href="#search" class="ui-btn-active">Search Schools</a></li>
+				<li> <a href="#schools" >Colleges</a></li>
+				<li> <a href="#search" class="ui-btn-active">Search Colleges</a></li>
 			</ul>
 		</nav>
 	</header >
-	<main role="main" class="ui-content" id="col-3-1" data-theme="a">
-		<form role="form">
+	<div role="main" class="ui-content" data-theme="a">
+		<h1>Search School Information</h1>
+		<form role="form"  >		
 			<div>
 				<label for="keyword">Keyword:</label>
 				<input type="text" id="keyword" >
 			</div>
 		
 			<div>
-				<label for="Student to Faculty-ratio">Student to Faculty Ratio</label>
-				<input min="1" max="30" id="teacher-student -ratio" value="" type="number">
+				<label for="student-teacher-ratio">Student to Faculty Ratio Less Than</label>
+				<input min="1" max="30" id="student-teacher-ratio" value="" type="number">
 			</div>
 
 			<div class="controlgroup">
@@ -367,7 +382,7 @@
 
 			<div class="controlgroup">
 				<label for="location" class="select">Campus Location:</label>
-				<select id="category" data-native-menu="false">>
+				<select id="location" data-native-menu="false">>
 					<option value="">City</option>
 					<option value="">Town</option>
 					<option value="">Surburb</option>
@@ -378,7 +393,7 @@
 				<label for="graduation-1a">Six year graduation rate(labeld as %)</label>
 				<input type="range" name="graduation-1a" id="graduation-1a" min="0" max="100" value="30" >
 				<label for="graduation-1b">Six year graduation rate(labeld as %)</label>
-				<input type="range" name="graduation-1a" id="graduation-1a" min="0" max="100" value="90" >
+				<input type="range" name="graduation-1b" id="graduation-1b" min="0" max="100" value="90" >
 			</div> 
 
 			<div data-role="rangeslider" >
@@ -388,26 +403,26 @@
 				<input type="range" name="tuition-1b" id="tuition-1b" min="0" max="65000" value="45000" >
 			</div>
 	
-			<fieldset data-role="controlgroup" data-type="horizontal">
-				<legend> College Type</legend>
+			<fieldset data-role="controlgroup" data-type="horizontal" class="middle">
+				<legend> College Type: </legend>
 				<label for= "public">
 					<input type="radio" name="public" value="public" id="public">Public</label>
 				<label for= "private">					
 					<input type="radio" name="private" value="private" id="private">Private</label>			
 			</fieldset>
 
-			<div class="controlgroup">
+			<div class="middle">
 				<label for="SAT">
 				    SAT optional?
 				</label>
 				<input type="checkbox" data-role="flipswitch" name="SAT" id="SAT" data-on-text="Yes" data-off-text="No" data-wrap-class="custom-label-flipswitch">
 			</div>
 
-			<div>
-			    <button type="submit" name="submit" class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Search</button>
+			<div class="middle">
+			    <button type="submit" name="submit" class="ui-shadow ui-btn ui-corner-all ui-btn-inline">Search Colleges</button>
 			</div>
 		</form>
-	</main>
+	</div>
 	<footer data-role="footer" style="overflow:hidden;">
 		<div data-role="navbar">
 			<ul>
@@ -417,9 +432,31 @@
 			</ul>
 		</div>
 	</footer>
-
+</section>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+$(document).ready(function(){
+	$('main').bind('swipeleft', function(event){
+		$('#five-college').removeClass().addClass('amherst-college').text("Amherst College");;//end swipeleft
+	});//end ready
+	$('main').bind('swiperight', function(event){
+		$('#five-college').removeClass().addClass('smith-college').text("Smith College");//end swiperight
+	});//end ready
+	$('main').bind('taphold', function(event){
+		$('#five-college').removeClass().addClass('umass-amherst').text("UMass-Amherst");//end taphold
+	});//end ready
+
+	$('window').on('orientationchange', function(){
+		if(window.orientation==0){
+			$('#five-college').removeClass().addClass('hampshire-college').text("Hampshire College");
+		}
+		else{
+			$('#five-college').removeClass().addClass('mount-holyoke-college').text("Mount Holyoke College");;
+		}
+	});//end ready
+})
+</script>
 </body>
 
 </html>
