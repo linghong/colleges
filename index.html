@@ -37,7 +37,8 @@
 			</ul>
 		</nav>
 	</header >
-	<div role="main" class="ui-content">
+	<!--use multiple 'main's cause w3 validation error, thus all the 'main's in other sections are changed to div -->
+	<main role="main" class="ui-content">
 		<div class="ui-corner-all custom-corners"> 
 			<div class="ui-bar ui-bar-a">
 				<h2>Visit of Five Colleges</h2>
@@ -56,7 +57,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</main>
 		
 		<p><a href="#schools" class="ui-btn ui-icon-carat-d ui-btn-icon-right">Read more Information about this college visit &gt;&gt;</a></p>
 	</div>
@@ -439,7 +440,7 @@
 <script>
 $(document).ready(function(){
 	$('main').bind('swipeleft', function(event){
-		$('#five-college').removeClass().addClass('amherst-college').text("Amherst College");;//end swipeleft
+		$('#five-college').removeClass().addClass('amherst-college').text("Amherst College");//end swipeleft
 	});//end ready
 	$('main').bind('swiperight', function(event){
 		$('#five-college').removeClass().addClass('smith-college').text("Smith College");//end swiperight
@@ -453,7 +454,7 @@ $(document).ready(function(){
 			$('#five-college').removeClass().addClass('hampshire-college').text("Hampshire College");
 		}
 		else{
-			$('#five-college').removeClass().addClass('mount-holyoke-college').text("Mount Holyoke College");;
+			$('#five-college').removeClass().addClass('mount-holyoke-college').text("Mount Holyoke College");
 		}
 	});//end ready
 })
