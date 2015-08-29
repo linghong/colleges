@@ -1,4 +1,1 @@
-colleges
-========
-
-only for the purpose of learning jquery mobile
+## a single page app built with jQuery Mobile 
